@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.page-wrapper {
+  position: relative;
+  background-color: #eee;
+
+  
+}
+
+#header {
+  
+  position: fixed;
+  top: 0;
+  min-height: 80px;
+  width: 100%;
+  background-color: #eee;
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  max-width: 500px;
+  
+  
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30px;
+}
+nav {
+  font-weight: 600;
+}
+#ul-nav {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(90, 90, 19);
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+
+  
+  
+}
+.hero {
+  
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  
+}
+
+#hero-title{
+    margin-bottom: 10px;
+}
+
+#form{
+    text-align: center;
+}
+
+#email{
+    max-width: 280px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 2px;
+    border: none;
+    background-color: #fff;
+    
+    
+}
+
+#submit{
+    margin: 15px 0;
+    max-width: 150px;
+    width: 100%;
+    background-color: rgb(216, 216, 79);
+    padding: 10px 30px;
+    border: none;
+    
+    font-weight: 600;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+#submit, .btn:hover{
+    background-color: rgb(183, 183, 38);
+    transition: .5s all;
+    
+}
+
+.features{
+    
+    margin-top: 30px;
+}
+
+.grid{
+    display: flex;
+}
+
+.icon-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 125px;
+
+}
+.icon{
+    width: 60px;
+    height: 60px;
+
+    
+}
+
+.descrip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: 125px;
+    padding: 5px;
+
+}
+
+.howitwork{
+    display: flex;
+    justify-content:  center;
+    margin: 85px ;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 95px;
+    
+    
+
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    /* padding: 5px; */
+    width: calc(100%/3);
+    margin: 0 15px;
+    /* border-radius: 12px; */
+    box-shadow: 17px 17px 20px 0px #bdbbbb ;
+    border-radius: 10px;
+
+}
+
+.tittle-div{
+    background-color:#dddd;
+    width: 100%;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius:12px 12px 0 0 ; 
+}
+
+.product h2{
+    margin-top: 15px;
+}
+
+.product ol{
+    margin-top: 15px;
+    line-height: 2em;
+}
+
+.btn{
+    margin: 45px 0;
+    max-width: 150px;
+    width: 100%;
+    background-color: rgb(216, 216, 79);
+    border: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    
+    
+
+}
+
+footer{
+    margin-top: 45px;
+    background-color: #ddd;
+    padding: 15px ;
+    height: 85px;
+   
+}
+
+.footer-ul{
+    display: flex;
+    justify-content: flex-end;
+    width: initial;
+    margin-bottom: 7px;
+}
+.footer-ul li a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #000;
+    font-size: 0.9em;
+}
+
+.footer-span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    
+}
+
+@media (max-width: 800px){
+
+    #header{
+        flex-direction: column;
+    }
+
+    #nav-bar{
+        
+        margin: 20px 0;
+        padding-bottom: 5px;
+    }
+
+    .hero{
+        margin-top: 145px;
+    }
+
+    #ul-nav{
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.2em;
+        
+        
+    }
+}
+
+@media (max-width: 600px){
+    #pricing{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product{
+        margin-bottom: 18px;
+        width: 58%;
+        min-width: 150px;
+        
+    }
+}
+@media(max-width: 450px){
+    #hero-title{
+        font-size: 1em;
+        
+    }
+
+    .hero{
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 340px){
+    .product{
+        width: 80%;
+    }
+
+    #hero-title{
+        text-align: center;
+    }
+
+    .hero{
+        padding-top: 50px;
+    }
+
+    .descrip > h2{
+        font-size: 1em;
+    }
+
+    .descrip > p{
+        font-size: 0.9em;
+        
+    }
+
+    #ul-nav{
+        margin-bottom: 9px;
+    }
+
+    
+}
